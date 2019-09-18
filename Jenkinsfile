@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        maître {
+        any {
             image 'node:6-alpine' 
             args '-p 3000:3000' 
         }
     }
-    maître {
+    any {
         stage('Build') { 
             steps {
                 sh 'npm install' 
